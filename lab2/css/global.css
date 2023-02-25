@@ -1,0 +1,45 @@
+@font-face {
+    font-family: DalekPinpointBold;
+    src: url("../fonts/DalekPinpointBold.ttf");
+}
+
+html {
+    background-color: #011E56;
+    color: white;
+
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: DalekPinpointBold, sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+img, iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 4px;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    background-color:slategray;
+}
