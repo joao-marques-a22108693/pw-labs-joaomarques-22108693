@@ -22,11 +22,12 @@
         <p>Uma pérola da antiguidade</p>
 
         <nav>
-            <a href="index.html">Introdução</a>
-            <a href="local.html">Localização</a>
-            <a href="multimedia.html">Multimedia</a>
-            <a href="info.html">Informação</a>
-            <a href="quizz.html">Quiz</a>
+            <a href="index.html">🎫Introdução</a>
+            <a href="local.html">🌍Localização</a>
+            <a href="multimedia.html">📷Multimedia</a>
+            <a href="info.html">📚Informação</a>
+            <a href="quizz.html">❔Quiz</a>
+            <a href="html5-css.html">🎨HTML5/CSS</a>
         </nav>
 
         <main>
@@ -37,11 +38,43 @@
 
                     <fieldset>
                         <legend>Info</legend>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" autofocus required>
+
+                        <label for="apelido">Apelido:</label>
+                        <input type="text" name="apelido" id="apelido" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required autocomplete="on">
                     </fieldset>
 
                     <fieldset>
                         <legend>Perguntas</legend>
+
+                        <label for="pergunta1">Qual é a praça onde se situa o parlamento Grego?</label>
+                        <select name="pergunta1">
+                            <option value="Monastiraki">Monastiraki</option>
+                            <option value="Sintagma">Sintagma</option>
+                            <option value="Agias Irinis">Agias Irinis</option>
+                        </select>
+
+                        <label for="pergunta2">Qual é a cor da borda exterior da bandeira de Atenas?</label>
+                        <input type="color" name="pergunta2">
+                        
+                        <label for="pergunta3">Qual é o nome original da cidade? (com o alfabeto romano)</label>
+                        <input type="text" name="pergunta3" maxlength="6" size="6" pattern="[A-Z]{1}[a-z]{5}">
+
+                        <label for="pergunta4">Qual foi a data em que foi aberto o metro de Atenas?</label>
+                        <input type="date" name="pergunta4"  min="1800-01-01" max="2000-01-01" value="1800-01-01">
+
+                        <label for="comentario">Escreva um comentário!</label>
+                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+
                     </fieldset>
+                    
+                    <br>
+                    <input type="submit" value="Submeter!">
                 </fieldset>
             </form>
         </main>

@@ -19,8 +19,22 @@ h1, h2, h3 {
     font-family: DalekPinpointBold, sans-serif;
 }
 
-#title, footer, figcaption {
+
+#title, #poema, footer, figcaption {
     text-align: center;
+}
+
+#poema {
+    font-style: italic;
+}
+
+#poema::first-letter {
+    font-family: DalekPinpointBold, sans-serif;
+    font-size: x-large;
+}
+
+span + p {
+    font-weight: 700;
 }
 
 img, iframe {
@@ -29,8 +43,24 @@ img, iframe {
     margin-right: auto;
 }
 
-a {
+a > img {
+    display: inline-block;
+}
+
+a:link {
     color: red;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: yellow;
+}
+
+input, select, textarea {
+    display: block;
 }
 
 table {
@@ -38,13 +68,18 @@ table {
 }
 
 td {
-    padding: 4px;
-}
-
-tr:nth-child(odd) {
+    padding: 8px;
     background-color: gray;
 }
 
-tr:nth-child(even) {
+td[rowspan] {
     background-color:slategray;
+}
+
+td[colspan] {
+    background-color: darkorange;
+}
+
+footer {
+    position: bottom;
 }
