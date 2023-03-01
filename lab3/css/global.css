@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family: VT323;
+    font-size: xx-large;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#flex {
+    display: flex;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 50vh;
+
+    justify-content: center;
+    align-items: center;
+}
