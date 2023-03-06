@@ -28,5 +28,6 @@
 
 #container2 > p {
     position: absolute;
-    top: 100vh;
+    top: 15vh;
+    left: 5vw;
 }
