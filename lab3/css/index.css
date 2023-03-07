@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family: VT323;
+    font-size: xx-large;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container1 {
+    display: flex;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 50vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 {
+    position: relative;
+}
+
+#container2 > img {
+    width: 100%;
+}
+
+#container2 > p {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+}
+
+#container3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+}
+
+.capital {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capital img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capital div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container4 {
+    display: flex;
+    flex-flow: row;
+
+    justify-content: center;
+}
+
+#container4 > div img {
+    clip-path: circle(30%);
+}
+
+#container4 > img:hover {
+    display: hidden;
+}
+
+.circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 150px;
+}
