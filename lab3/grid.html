@@ -12,11 +12,42 @@
                 margin: 0;
             }
 
-            header { grid-area: header; }
+            header {
+                grid-area: header;
+                background-image: url("./img/flores.jpg");
+                background-size: cover;
+            }
             nav { grid-area: menu; }
-            main { grid-area: main; }
-            aside {grid-area: right;}
-            footer {grid-area: footer;}
+            main {
+                grid-area: main;
+                padding-top: 3%;
+                padding-left: 10%;
+                padding-right: 10%;
+
+                background-size: cover;
+            }
+            main p {
+                font-size: large;
+                text-align: justify;
+                text-justify:newspaper;
+            }
+            aside {
+                grid-area: right;
+                background-image: url("./img/flores-2.jpg");
+                background-size: cover;
+            }
+            footer { grid-area: footer; }
+
+            nav, footer {
+                background-color: rgb(255, 217, 0)!important;
+            }
+
+            header, footer, aside {
+                display: flex;
+
+                justify-content: center;
+                align-items: center;
+            }
 
             nav a {
                 display: block;
@@ -30,7 +61,7 @@
                 padding: 10px;
 
                 text-align: center;
-                background-color: dodgerblue;
+                background-color: beige;
 
                 grid-template-areas:
                     "header header header"
@@ -64,10 +95,17 @@
             <main>
                 <h2><i>Ixora chinensis</i></h2>
 
+                <br>
+                <img src="./img/ixora-chinensis.jpg" alt="" width="70%">
+                <br>
+
+                <p>A <i>Ixora chinensis</i> (nome científico) é uma espécie de arbusto nativa da China, com flores pequenas em formato de estrela e com uma cor avermelhada.</p>
+                <br>
+                <p>Este arbusto consegue atingir os 2 metros de altura, e sobrevive melhor num ambiente húmido e tropical.</p>
                 
             </main>
-            <aside>Right</aside>
-            <footer>Footer</footer>
+            <aside>O seu anúncio aqui!</aside>
+            <footer>João Marques, a22108693, ULHT</footer>
         </div>
     </body>
 </html>
