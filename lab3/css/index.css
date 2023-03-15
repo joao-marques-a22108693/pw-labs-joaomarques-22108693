@@ -108,7 +108,7 @@ header > nav {
 }
 
 #container4 > img:hover {
-    display: hidden;
+    visibility: hidden;
 }
 
 .circulo {
