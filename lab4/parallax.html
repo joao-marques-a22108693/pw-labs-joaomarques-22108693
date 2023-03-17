@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="./css/parallax.css">
+</head>
+<body>
+    <header>Parallax</header>
+    
+    <div class="container">
+        <p>Imagem responsiva!!!</p>
+
+        <picture>
+            <source srcset="./img/imagem.jpg" media="(min-width: 1000px)">
+            <source srcset="./img/imagem2.jpg" media="(max-width: 999px)">
+
+            <img src="./img/imagem.jpg" alt="">
+        </picture>
+        
+        <p>Isto aqui é um paragrafo</p>
+        <div class="parallax"></div>
+        <p>Mais texto informativo para demonstrar o efeito "Parallax" do CSS!</p>
+        <div class="parallax"></div>
+        <p>mais texto aqui!</p>
+        <div class="parallax"></div>
+        <p>Isto já deve ser suficiente</p>
+        <div class="parallax"></div>
+    </div>
+
+</body>
+</html>

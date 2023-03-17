@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+header {
+    padding: 7px 5px 7px 5px;
+    margin-bottom: 5px;
+
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+
+    background-color: lightgray;
+}
+
+picture > img{
+    width: 80%;
+}
+
+picture {
+    text-align: center;
+}
+
+.parallax {
+    min-height: 200px;
+    min-width: 80%;
+    margin: 7px 5px 7px 5px;
+
+    background-image: url(../img/imagem.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
