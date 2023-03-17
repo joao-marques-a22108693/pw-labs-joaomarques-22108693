@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+#img1 {
+    opacity: 60%;
+    transition: all 1s;
+}
+
+#img1:hover {
+    transform: rotate(360deg);
+}
+
+#img1:active {
+    animation-name: anim2;
+    animation-duration: 1s;
+}
+
+#img2 {
+    background-color: black;
+    filter: blur(2px);
+    transition: all 0.5s;
+}
+
+#img2:hover {
+    transform: skew(20deg, 20deg);
+}
+
+#img2:active {
+    animation-name: anim1;
+    animation-duration: 1s;
+}
+
+@keyframes anim1 {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes anim2 {
+    100% {
+        background-color: aquamarine;
+    }
+}
+
+#parte1, br ~ div {
+    text-align: center;
+}
+
+.quadra::first-line {
+    font-size: larger;
+}
+
+.grande, .importante {
+    transition: all 0.3s;
+}
+
+.grande:hover {
+    font-size: xx-large;
+}
+
+.importante:hover {
+    color: red;
+}
+
+#parte1 {
+    background-color: yellow;
+}
+
+div[id=parte1] p {
+    color: blueviolet;
+}
+
+br + div > p::first-letter {
+    font-size: larger;
+    color: red;
+}
