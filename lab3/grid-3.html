@@ -76,6 +76,25 @@
             .grid-container > * {
                 background-color: white;
             }
+            
+            @media only screen and (max-width: 800px), (orientation: portrait) {
+                .grid-container {
+                    grid-template-areas:
+                    "header"
+                    "main"
+                    "menu"
+                    "right"
+                    "footer";
+                    
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 10%  1fr 50px 50px 50px;
+                }
+                
+                nav {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
         </style>
     </head>
 
