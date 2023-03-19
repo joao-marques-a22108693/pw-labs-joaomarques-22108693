@@ -1,3 +1,8 @@
+@font-face {
+    font-family: DalekPinpointBold;
+    src: url("../fonts/DalekPinpointBold.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
     box-sizing: border-box;
 
     color: white;
-    font-family: sans-serif;
+    font-family: DalekPinpointBold;
     font-size: 1.3rem;
 }
 
@@ -47,8 +52,9 @@ nav > div {
     position: absolute;
 
     background-color: darkgray;
+    padding: 2%;
+    border-radius: 5px;
 }
-
 
 .item {
     text-decoration: none;
@@ -61,9 +67,14 @@ input[type="checkbox"] {
 
 #insp {
     grid-area: insp;
+
+    font-size: 1.8em;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     #main {
         grid-template-areas: "header"
                              "nav"
@@ -74,6 +85,10 @@ input[type="checkbox"] {
 
     nav {
         flex-flow: column;
+
+        padding: 2%;
+        background-color: gray;
+        border-radius: 5px;
     }
 
     .item::before {
@@ -90,7 +105,7 @@ input[type="checkbox"] {
     }
 }
 
-@media only screen and (min-width: 551px) {
+@media only screen and (min-width: 601px) {
     nav > div:hover .content {
         display: block;
     }   
