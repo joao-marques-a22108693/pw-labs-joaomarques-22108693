@@ -49,10 +49,49 @@ nav > div {
     background-color: darkgray;
 }
 
-nav > div:hover .content {
-    display: block;
+
+.item {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 #insp {
     grid-area: insp;
+}
+
+@media only screen and (max-width: 550px) {
+    #main {
+        grid-template-areas: "header"
+                             "nav"
+                             "insp";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    nav {
+        flex-flow: column;
+    }
+
+    .item::before {
+        content: "\2022  ";
+    }
+    
+    input[type="checkbox"]:checked ~ .content {
+        display: block;
+    }
+
+    #insp {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 551px) {
+    nav > div:hover .content {
+        display: block;
+    }   
 }
