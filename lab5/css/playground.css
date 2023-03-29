@@ -1,8 +1,42 @@
 body {
-    background-color: #252525;
+    background-color: aquamarine;
     color: white;
 }
 
-button {
-    
+#calc {
+    margin: 5% auto;
+    max-width: 424px;
+    display: grid;
+
+    row-gap: 5%;
+    column-gap: 2%;
+    grid-template-rows: auto 32px 32px 32px 32px;
+    grid-template-columns: auto auto auto auto;
+}
+
+#resultado {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#calc > button {
+    appearance: none;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+#calc > button:hover {
+    background-color: darkgray;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+#calc > button:active {
+    transition: 0s;
+    background-color: rgb(70, 70, 70);
 }
