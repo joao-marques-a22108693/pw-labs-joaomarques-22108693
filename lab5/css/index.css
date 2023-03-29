@@ -1,0 +1,53 @@
+.parent {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: aqua;
+
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.parent > img {
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+header {
+    display: flex;
+
+    padding: 5px 4px 5px 4px;
+
+    position: fixed;
+    top: 0%;
+
+    width: 100%;
+
+    z-index: 1;
+}
+
+header a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.right {
+    margin-left: auto;
+}
