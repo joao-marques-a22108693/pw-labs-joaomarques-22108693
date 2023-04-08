@@ -56,7 +56,28 @@
     margin-left: auto;
 }
 
+.center {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
 #first {
     background-color: aqua;
     justify-content: center;
+    align-items: center;
+}
+
+#theme-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+#theme-toggle:hover {
+    cursor: pointer;
+}
+
+#insp {
+    font-size: larger;
+    font-style: italic;
 }
