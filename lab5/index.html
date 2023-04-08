@@ -10,9 +10,19 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+    </style>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="dark">
         <a href="./index.html">JTM</a>
         
         <div class="center">
@@ -21,20 +31,20 @@
 
         <div class="right">
             <button id="theme-toggle" onclick="toggle_theme()">
-                <span class="material-symbols-outlined">dark_mode</span>
+                <span class="material-symbols-outlined" style="color: white;">light_mode</span>
             </button>
         </div>
     </header>
 
     <div class="parent">
-        <div class="container" id="first">
+        <div class="dark container" id="first">
             <span id="insp">Lorem ipsum dolor sit amet</span>
         </div>
 
         <img src="./img/mouse-scroll.svg" height="40" width="40">
     </div>
 
-    <div class="container">
+    <div class="dark container">
         <h1>About me</h1>
         
     </div>

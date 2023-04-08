@@ -11,5 +11,13 @@ window.onscroll = function() {
 
 function toggle_theme() {
     const label = theme_toggle.children[0];
-    label.innerHTML = label.innerHTML == 'dark_mode' ? 'light_mode' : 'dark_mode';
+    const opposite_theme = label.innerHTML == 'dark_mode' ? 'dark' : 'light';
+    const current_theme = opposite_theme == 'dark' ? 'light' : 'dark';
+
+    label.innerHTML = current_theme + '_mode';
+    label.style.color = current_theme == 'light' ? 'white' : 'black';
+
+    for (const e of document.querySelectorAll(`.${current_theme}`)) {
+        e.classList.replace(current_theme, opposite_theme);
+    }
 }

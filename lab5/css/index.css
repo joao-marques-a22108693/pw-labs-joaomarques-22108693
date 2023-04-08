@@ -23,6 +23,7 @@
 
 #header {
     display: flex;
+    align-items: center;
 
     padding: 5px 4px 5px 4px;
 
@@ -80,4 +81,36 @@
 #insp {
     font-size: larger;
     font-style: italic;
+}
+
+.dark {
+    color: white;
+}
+
+.light {
+    color: black;
+}
+
+.container.dark {
+    background-color: darkslategray;
+}
+
+.container.dark + img {
+    filter: invert();
+}
+
+#header.dark {
+    background-color: transparent;
+}
+
+#header.dark a {
+    color: white;
+}
+
+.header-scrolled.dark {
+    background-color: black!important;
+}
+
+#first.dark {
+    background-color: darkcyan;
 }
