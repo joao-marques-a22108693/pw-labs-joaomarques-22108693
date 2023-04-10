@@ -64,7 +64,9 @@
 }
 
 #first {
-    background-color: aqua;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
     justify-content: center;
     align-items: center;
 }
