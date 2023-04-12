@@ -6,3 +6,8 @@
 
     font-family: sans-serif;
 }
+
+@font-face {
+    font-family: Ethnocentric;
+    src: url('../fonts/ethnocentric.rg-italic.otf');
+}
