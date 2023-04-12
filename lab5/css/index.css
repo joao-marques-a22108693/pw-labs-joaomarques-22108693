@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: calc();
+}
+
 .parent {
     position: relative;
 }
@@ -114,5 +118,10 @@
 }
 
 #first.dark {
-    background-color: darkcyan;
+    background-blend-mode: unset;
+}
+
+#first.light {
+    background-color: darkslategray;
+    background-blend-mode:lighten;
 }
