@@ -25,15 +25,19 @@
     <header id="header" class="dark">
         <a href="./index.html">JTM</a>
         
-        <div class="center">
+        <div class="center" id="links">
             <a href="#second">About me</a>
             <a href="#third">Projects</a>
             <a href="./playground.html">Playground</a>
         </div>
 
         <div class="right">
-            <button id="theme-toggle" onclick="toggle_theme()">
+            <button id="theme-toggle" class="image-button" onclick="toggle_theme()">
                 <span class="material-symbols-outlined" style="color: white;">light_mode</span>
+            </button>
+
+            <button id="menu-toggle" class="image-button" onclick="toggle_menu()">
+                <span class="material-symbols-outlined" style="color: white;">menu</span>
             </button>
         </div>
     </header>
