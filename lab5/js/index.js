@@ -1,6 +1,7 @@
 const header = document.getElementById('header');
 const theme_toggle = document.getElementById('theme-toggle');
 const menu_button = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
 
 window.onscroll = function() {
     if (scrollY == 0) {
@@ -23,4 +24,8 @@ function toggle_theme() {
     for (const e of document.querySelectorAll(`.${current_theme}`)) {
         e.classList.replace(current_theme, opposite_theme);
     }
+}
+
+function toggle_menu() {
+    menu.style.display = menu.style.display != 'flex' ? 'flex' : 'none';
 }

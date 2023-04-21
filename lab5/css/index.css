@@ -79,6 +79,14 @@
     pointer-events: all;
 }
 
+#menu {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
 #first {
     min-height: 100vh;
 
@@ -96,10 +104,6 @@
 
 .image-button:hover {
     cursor: pointer;
-}
-
-#menu-toggle {
-    display: none;
 }
 
 #insp {
@@ -163,5 +167,42 @@
 
     #menu-toggle {
         display: inline-block;
+    }
+
+    #menu {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: black;
+        padding: 5%;
+        width: 100%;
+        flex-flow: column;
+    }
+
+    #menu > * {
+        position: relative;
+    }
+
+    #menu > *:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid white;
+    }
+
+    #menu > a {
+        text-decoration: none!important;
+    }
+    
+    #menu > button {
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #menu {
+        display: none!important;
     }
 }
