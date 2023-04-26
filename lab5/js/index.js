@@ -1,6 +1,3 @@
-const header = document.getElementById('header');
-const theme_toggle = document.getElementById('theme-toggle');
-const menu_button = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
 window.onscroll = function() {
@@ -11,20 +8,6 @@ window.onscroll = function() {
     }
 }
 
-function toggle_theme() {
-    const label = theme_toggle.children[0];
-    const menu_label = menu_button.children[0];
-    const opposite_theme = label.innerHTML == 'dark_mode' ? 'dark' : 'light';
-    const current_theme = opposite_theme == 'dark' ? 'light' : 'dark';
-
-    label.innerHTML = current_theme + '_mode';
-    label.style.color = current_theme == 'light' ? 'white' : 'black';
-    menu_label.style.color = current_theme == 'light' ? 'white' : 'black';
-
-    for (const e of document.querySelectorAll(`.${current_theme}`)) {
-        e.classList.replace(current_theme, opposite_theme);
-    }
-}
 
 function toggle_menu() {
     menu.style.display = menu.style.display != 'flex' ? 'flex' : 'none';

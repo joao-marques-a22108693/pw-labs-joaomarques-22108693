@@ -1,6 +1,5 @@
-body {
-    background-color: aquamarine;
-    color: white;
+#first {
+    min-height: 100vh;
 }
 
 #calc {
@@ -12,6 +11,10 @@ body {
     column-gap: 2%;
     grid-template-rows: auto 32px 32px 32px 32px;
     grid-template-columns: auto auto auto auto;
+}
+
+#calc > button {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #resultado {
