@@ -31,27 +31,37 @@
             </button>
         </div>
     </header>
-    
-    <div id="first" class="container dark">
-        <span id="date"></span>
-        <div id="calc">
-            <input type="text" id="resultado">
-            <button>7</button> <button>8</button> <button>9</button> <button>+</button>
-            <button>4</button> <button>5</button> <button>6</button> <button>-</button>
-            <button>1</button> <button>2</button> <button>3</button> <button>*</button>
-            <button id="clear">C</button> <button>0</button> <button id="calcButton">=</button> <button>/</button>
+
+    <main>
+        <div id="first" class="container dark">
+            <span id="date"></span>
+            <div id="calc">
+                <input type="text" id="resultado">
+                <button>7</button> <button>8</button> <button>9</button> <button>+</button>
+                <button>4</button> <button>5</button> <button>6</button> <button>-</button>
+                <button>1</button> <button>2</button> <button>3</button> <button>*</button>
+                <button id="clear">C</button> <button>0</button> <button id="calcButton">=</button> <button>/</button>
+            </div>
         </div>
-    </div>
-
-    <div class="container dark">
-        <h1 id="img-lbl"></h1>
-        <img src="./img/bg.jpg" alt="">
-
-        <br>
-
-        <label for="img-txt">Insira uma frase sobre a imagem:</label>
-        <input type="text" id="img-txt">
-    </div>
+    
+        <div id="second" class="container dark">
+            <div>
+                <label for="nome">Insira o seu nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+            </div>
+        </div>
+    
+        <div class="container dark">
+            <h1 id="img-lbl"></h1>
+            <img src="./img/bg.jpg" alt="">
+    
+            <br>
+    
+            <label for="img-txt">Insira uma frase sobre a imagem:</label>
+            <input type="text" id="img-txt">
+        </div>
+    </main>
     
     <script src="./js/playground.js"></script>
     <script src="./js/theme.js"></script>

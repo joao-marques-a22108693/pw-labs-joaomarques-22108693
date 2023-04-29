@@ -1,5 +1,21 @@
+body {
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.light {
+    background-color: darkslategray;
+    background-blend-mode: lighten;
+}
+
 .parent {
     position: relative;
+}
+
+.parent > div.container {
+    background: none!important;
 }
 
 .parent > img {
@@ -9,40 +25,38 @@
     transform: translate(50%, -50%);
 }
 
-#menu {
-    display: none;
-}
-
-#menu-toggle {
-    display: none;
-}
-
 #first {
     min-height: 100vh;
 
-    background-image: url('../img/bg.jpg');
-    background-position: center;
-    background-size: cover;
     justify-content: center;
     align-items: center;
+}
+
+#third > .content, #forth > .content {
+    display: flex;
+    justify-content: center;
 }
 
 #insp {
     font-size: larger;
     font-style: italic;
+
+    animation: 2s anim cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
 }
 
 .container.dark + img {
     filter: invert();
-}
-
-#first.dark {
-    background-blend-mode: unset;
-}
-
-#first.light {
-    background-color: darkslategray;
-    background-blend-mode:lighten;
 }
 
 #third.light {
@@ -53,49 +67,54 @@
     background-color: brown;
 }
 
+.project {
+    display: flex;
+
+    background-color: white;
+    color: black;
+
+    width: 200px;
+    height: 70px;
+    margin: 10px 5px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow: 0 16px 1em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.project.dark {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.project > div {
+    width: 70px;
+    background-color: lightskyblue;
+    background-position: center;
+}
+
+.project > span {
+    margin: 5px 5px;
+}
+
+footer {
+    display: flex;
+
+    height: 10vh;
+    width: 100%;
+
+    align-items: center;
+}
+
 @media screen and (max-width: 600px) {
     #links {
         display: none;
     }
 
-    #menu-toggle {
-        display: inline-block;
-    }
-
-    #menu {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        background-color: black;
-        padding: 5%;
-        width: 100%;
+    #third > .content {
         flex-flow: column;
-    }
-
-    #menu > * {
-        position: relative;
-    }
-
-    #menu > *:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-bottom: 1px solid white;
-    }
-
-    #menu > a {
-        text-decoration: none!important;
-    }
-    
-    #menu > button {
-        text-align: end;
-    }
-}
-
-@media screen and (min-width: 601px) {
-    #menu {
-        display: none!important;
+        align-items: center;
     }
 }
