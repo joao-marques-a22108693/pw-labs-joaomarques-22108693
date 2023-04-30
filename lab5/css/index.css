@@ -113,7 +113,7 @@ footer {
         display: none;
     }
 
-    #third > .content {
+    #third > .content, #forth > .content {
         flex-flow: column;
         align-items: center;
     }
