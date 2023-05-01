@@ -7,7 +7,6 @@
     <title>Playground</title>
 
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/playground.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -33,7 +32,7 @@
     </header>
 
     <main>
-        <div id="first" class="container dark">
+        <div id="pg-first" class="container dark">
             <span id="date"></span>
             <div id="calc">
                 <input type="text" id="resultado">
@@ -44,7 +43,7 @@
             </div>
         </div>
     
-        <div id="second" class="container dark">
+        <div id="pg-second" class="container dark">
             <div>
                 <label for="nome">Insira o seu nome:</label>
                 <br>
@@ -52,14 +51,24 @@
             </div>
         </div>
     
-        <div class="container dark">
-            <h1 id="img-lbl"></h1>
-            <img src="./img/bg.jpg" alt="">
-    
+        <div id="pg-third" class="container dark">
+            <div class="container dark" id="img-container">
+                <img src="./img/bg.jpg" alt="">
+
+                <span></span>
+            </div>
+
             <br>
     
-            <label for="img-txt">Insira uma frase sobre a imagem:</label>
-            <input type="text" id="img-txt">
+            <div>
+                <label for="img-txt">Insira uma frase sobre a imagem:</label>
+                <br>
+                <input type="text" id="img-txt">
+            </div>
+        </div>
+
+        <div id="pg-forth" class="container dark">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IWVJq-4zW24?controls=0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </main>
     
